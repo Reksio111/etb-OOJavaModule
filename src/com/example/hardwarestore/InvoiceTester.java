@@ -4,7 +4,7 @@ public class InvoiceTester {
 
 	public static void main(String[] args) {
 
-		Invoice invoice = new Invoice("22", "clatch", 2, 102);
+		Invoice invoice = new Invoice("22", "clatch", 1, 102);
 
 		invoice.setInvoice();
 		
