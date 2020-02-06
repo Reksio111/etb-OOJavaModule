@@ -27,6 +27,7 @@ public class CoffeTest {
 		cup1.setColor("blue");
 		cup2.setColor("green");
 		
+		//efouweoiuwew
 		System.out.println("\nThe first cup new color is " + cup1.getColor() + ", the capacity hadn't change");
 		System.out.println("The second cup new color is " + cup2.getColor() + ", the capacity hadn't change");
 		
