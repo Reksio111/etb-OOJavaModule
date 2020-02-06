@@ -23,13 +23,45 @@ public class Invoice {
 			return false;
 	}
 
+	public String getPartnumber() {
+		return partnumber;
+	}
+
+	public void setPartnumber(String partnumber) {
+		this.partnumber = partnumber;
+	}
+
+	public String getPartdescription() {
+		return partdescription;
+	}
+
+	public void setPartdescription(String partdescription) {
+		this.partdescription = partdescription;
+	}
+
+	public int getQuantity() {
+		return quantity;
+	}
+
+	public void setQuantity(int quantity) {
+		this.quantity = quantity;
+	}
+
+	public double getPrice() {
+		return price;
+	}
+
+	public void setPrice(double price) {
+		this.price = price;
+	}
+
+
 	public boolean pricevalidate() {
 		if (this.price > 0)
 			return true;
 		else
 			return false;
 	}
-	
 
 	public void setInvoice() {
 
