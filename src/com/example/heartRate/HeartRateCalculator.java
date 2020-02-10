@@ -2,7 +2,6 @@ package com.example.heartRate;
 
 import java.time.LocalDate;
 
-
 public class HeartRateCalculator {
 
 	private String fname;
@@ -10,6 +9,7 @@ public class HeartRateCalculator {
 	private LocalDate date;
 
 	public HeartRateCalculator(String first, String last, LocalDate date) {
+
 		this.fname = first;
 		this.lname = last;
 		this.date = date;
@@ -48,19 +48,19 @@ public class HeartRateCalculator {
 
 		int age = curYear - dobYear;
 
-		//reduce age if month or day is behind today's month or day
+		// reduce age if month or day is behind today's month or day
 		int currentMonth = todayDate.getMonthValue();
 		int dobMonth = dob.getMonthValue();
-		if (dobMonth > currentMonth) { 
+		if (dobMonth > currentMonth) {
 			age--;
 		} else if (dobMonth == currentMonth) {
 			int currentDay = todayDate.getDayOfMonth();
 			int dobDay = dob.getDayOfMonth();
-			if (dobDay > currentDay) { 
+			if (dobDay > currentDay) {
 				age--;
 			}
 		}
-		
+
 		return age;
 	}
 
