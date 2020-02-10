@@ -40,24 +40,23 @@ public class HeartRateCalculator {
 	}
 
 	public int calculateAge() {
-		LocalDate d = this.getDate();
+		LocalDate dob = this.getDate();
 		LocalDate todayDate = LocalDate.now();
 
 		int curYear = todayDate.getYear();
-		int dobYear = d.getYear();
+		int dobYear = dob.getYear();
 
 		int age = curYear - dobYear;
 
-		// if dob is month or day is behind today's month or day
-		// reduce age by 1
-		int curMonth = todayDate.getMonthValue();
-		int dobMonth = d.getMonthValue();
-		if (dobMonth > curMonth) { // this year can't be counted!
+		//reduce age if month or day is behind today's month or day
+		int currentMonth = todayDate.getMonthValue();
+		int dobMonth = dob.getMonthValue();
+		if (dobMonth > currentMonth) { 
 			age--;
-		} else if (dobMonth == curMonth) { // same month? check for day
-			int curDay = todayDate.getDayOfMonth();
-			int dobDay = d.getDayOfMonth();
-			if (dobDay > curDay) { // this year can't be counted!
+		} else if (dobMonth == currentMonth) {
+			int currentDay = todayDate.getDayOfMonth();
+			int dobDay = dob.getDayOfMonth();
+			if (dobDay > currentDay) { 
 				age--;
 			}
 		}
