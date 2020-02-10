@@ -33,7 +33,7 @@ public class HeartRateCalculatorTester {
 		} catch (DateTimeException error) {
 			System.out.print("Invalid input\n" + error.getMessage());
 		} catch (InputMismatchException error) {
-			System.out.print("Only integer values\n" + error.getMessage());
+			System.out.print("Integer values only please\n" + error.getMessage());
 		}
 	}
 
