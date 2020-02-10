@@ -25,10 +25,11 @@ public class HeartRateCalculatorTester {
 			int year = keyIn.nextInt();
 
 			HeartRateCalculator heartrate = new HeartRateCalculator(fname, lname, LocalDate.of(year, month, day));
+			
 			heartrate.displayCustomerDetails();
-			System.out.println("Your age is: " + heartrate.calculateAge());
-			System.out.println("Your maximum hear rate is " + heartrate.calculateHeartRate() + " heart beats per hour");
-			heartrate.targetRate();
+			System.out.println("Customer age is: " + heartrate.calculateAge());
+			System.out.println("Maximum safe heart rate is " + heartrate.calculateHeartRate() + " heart beats per hour");
+			System.out.print("Target rate is between "+ heartrate.targetRate());
 
 		} catch (DateTimeException error) {
 			System.out.print("Invalid input\n" + error.getMessage());

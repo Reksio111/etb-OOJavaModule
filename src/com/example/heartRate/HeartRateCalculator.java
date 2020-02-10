@@ -69,14 +69,12 @@ public class HeartRateCalculator {
 		return 220 - this.calculateAge();
 	}
 
-	public void targetRate() {
+	public String targetRate() {
 
 		int mintarget = (int) (this.calculateHeartRate() * .50);
 		int maxtarget = (int) (this.calculateHeartRate() * .85);
 
-		System.out.println(
-				"Your target heart rate is between " + mintarget + " and " + maxtarget + " heart beats per minute");
-
+		return mintarget + " and " + maxtarget;
 	}
 
 	public void displayCustomerDetails() {
