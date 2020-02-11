@@ -28,16 +28,19 @@ public class HeartRateWithArrayListTester {
 			int year = keyIn.nextInt();
 
 			HeartRateWitharrayList heartrate = new HeartRateWitharrayList(fname, lname, LocalDate.of(year, month, day));
+			HeartRateWitharrayList heartrate1 = new HeartRateWitharrayList("John", "John", LocalDate.of(2005, 6, 5));
 			list.add(heartrate);
+			list.add(heartrate1);
 			
 			heartrate.displayCustomerDetails();
 			System.out.println("Customer age is: " + heartrate.calculateAge());
 			System.out.println("Maximum safe heart rate is " + heartrate.calculateHeartRate() + " heart beats per hour");
-			System.out.print("Target rate is between "+ heartrate.targetRate());
+			System.out.print("Target rate is between "+ heartrate.targetRate() + "\n");
+			
 			
 			
 			for(int i=0; i < list.size(); i++)
-				System.out.println(list.get(i).getFname());
+				list.get(i).displayCustomerDetails();
 		} catch (DateTimeException error) {
 			System.out.print("Invalid input\n" + error.getMessage());
 		} catch (InputMismatchException error) {
