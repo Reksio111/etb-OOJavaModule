@@ -1,4 +1,7 @@
-package com.example.inheritance;
+package com.example.inheritance.animals;
+
+import com.example.inheritance.animals.Cat;
+import com.example.inheritance.animals.Dog;
 
 public class AnimalsTester {
 

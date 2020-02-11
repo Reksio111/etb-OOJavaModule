@@ -1,4 +1,4 @@
-package com.example.inheritance;
+package com.example.inheritance.animals;
 
 public class Animals {
 
