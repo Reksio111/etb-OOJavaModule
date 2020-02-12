@@ -6,7 +6,7 @@ public class EmployeeTester {
 		BasePlusCommissionEmployee empl=new BasePlusCommissionEmployee ("John", "McCormic", .4, 20000);
 		System.out.println(empl.toString());
 		
-		empl1.
+	
 
 	}
 

@@ -1,6 +1,6 @@
 package com.example.inheritance.employee;
 
-public class BasePlusCommissionEmployee extends ComissionEmployee {
+public class BasePlusCommissionEmployee extends CommissionEmployee {
 	
 	private double monthlySalary;
 
@@ -16,12 +16,7 @@ public class BasePlusCommissionEmployee extends ComissionEmployee {
 	public void setMonthlySalary(double monthlySalary) {
 		this.monthlySalary = monthlySalary;
 	}
-	@Override
-	public String toString() {
-		String output=super.toString();
-		output+="\nMonthly salary: "+ this.monthlySalary
-	}
-	
+
 	
 	
 }
