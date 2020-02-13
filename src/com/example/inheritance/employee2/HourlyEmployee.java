@@ -15,9 +15,8 @@ public class HourlyEmployee extends Employee {
 
 	public HourlyEmployee(String name, String lname, double wageIn) {
 		super(name, lname);
-		if(wageIn > 0) {
-		this.wage = wageIn;
-		}else this.wage=0;
+		this.wage=wageIn;
+
 	}
 
 	public double getWage() {
@@ -27,18 +26,23 @@ public class HourlyEmployee extends Employee {
 	public void setWage(double rate) {
 		if (rate > 0) {
 			this.wage = rate;
-		}
-		else this.wage=1;
+		} else
+			this.wage = 1;
 
 	}
 
 	public double weeklyEarning(double hoursWorked) {
-		double weeklyWage = 0;
-		if (hoursWorked > 0 && hoursWorked < 169) {
-			weeklyWage = wage * hoursWorked;
-		}
 
-		return weeklyWage;
+		if (hoursWorked > 168 || hoursWorked < 0) {
+			System.out.println("Hours worked amount must be between 0 and 168");
+			return 0;
+
+		}
+		if (hoursWorked > 40) {
+			return (40 * this.wage) + ((hoursWorked - 40) * wage * 1.5);
+		}
+		return this.wage * hoursWorked;
+
 	}
 
 	@Override
