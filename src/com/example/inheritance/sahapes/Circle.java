@@ -26,4 +26,12 @@ public class Circle extends Shape {
 				+ "\nCircumstance: " + this.getCicumstance() + "\n";
 	}
 
+	public double getRadius() {
+		return radius;
+	}
+
+	public void setRadius(double radius) {
+		this.radius = radius;
+	}
+
 }
