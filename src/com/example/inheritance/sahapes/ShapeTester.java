@@ -43,13 +43,6 @@ public class ShapeTester {
 			System.out.println("theAcctuallySquare it's not a Cicrcle object");
 		}
 
-		/*
-		 * System.out.println(rectangle.toString());
-		 * System.out.println(square.toString()); System.out.println(circle.toString());
-		 * System.out.println(triangle.toString()); System.out.println(cube.toString());
-		 * System.out.println(cuboid.toString()); System.out.println(sphere.toString());
-		 */
-
 	}
 
 	public static void printShapeDetails(Shape shape) {
