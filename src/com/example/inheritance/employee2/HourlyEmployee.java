@@ -15,32 +15,34 @@ public class HourlyEmployee extends Employee {
 
 	public HourlyEmployee(String name, String lname, double wageIn) {
 		super(name, lname);
+		if(wageIn > 0) {
 		this.wage = wageIn;
+		}else this.wage=0;
 	}
 
 	public double getWage() {
 		return wage;
 	}
 
-	public void setWage(double wage) {
-		if (wage > 0) {
-			this.wage = wage;
+	public void setWage(double rate) {
+		if (rate > 0) {
+			this.wage = rate;
 		}
+		else this.wage=1;
 
 	}
 
 	public double weeklyEarning(double hoursWorked) {
 		double weeklyWage = 0;
-		if (hoursWorked >= 1 && hoursWorked < 169) {
+		if (hoursWorked > 0 && hoursWorked < 169) {
 			weeklyWage = wage * hoursWorked;
 		}
 
 		return weeklyWage;
 	}
-	
-	
+
 	@Override
 	public String toString() {
-		return super.toString()+ "\nHourly wage: " +this.wage;	
+		return super.toString() + "\nType: Hourly Staff" + "\nHourly wage: " + this.wage;
 	}
 }

@@ -1,3 +1,4 @@
+
 package com.example.inheritance.employee2;
 
 /*
@@ -11,11 +12,12 @@ constructor. Next, rewrite class CommissionEmployee from the previous exercise a
 public class Employee {
 	private String firstName;
 	private String lastName;
-	
+
 	public Employee(String fname, String lname) {
-		this.firstName=fname;
-		this.lastName=lname;
+		this.firstName = fname;
+		this.lastName = lname;
 	}
+
 	/**
 	 * @return the firstName
 	 */
@@ -46,9 +48,9 @@ public class Employee {
 
 	@Override
 	public String toString() {
-		String output="Employee datails:";
-		output+="\nFirst name: " + this.firstName ;
-		output+="\nFamily name: " +this.lastName;
+		String output = "Employee datails:";
+		output += "\nFirst name: " + this.firstName;
+		output += "\nFamily name: " + this.lastName;
 		return output;
 	}
 

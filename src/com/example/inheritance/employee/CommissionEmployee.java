@@ -10,13 +10,13 @@ public class CommissionEmployee {
 		this.firstName = firstName;
 		this.lastName = lastName;
 
-		if(commissionRate > 0 && commissionRate < 1) {
+		if (commissionRate > 0 && commissionRate < 1) {
 			this.commissionRate = commissionRate;
 		} else {
 			this.commissionRate = 0;
 		}
 	}
-	
+
 	public double calculateMonthlyEarnings(double monthlySales) {
 		return monthlySales * commissionRate;
 	}
@@ -61,5 +61,11 @@ public class CommissionEmployee {
 	 */
 	public void setCommissionRate(double commissionRate) {
 		this.commissionRate = commissionRate;
+	}
+
+	public String toString() {
+		String output = "Employee: " + this.firstName + ", " + this.lastName;
+		output += "\nCommission rate: " + this.commissionRate;
+		return output;
 	}
 }
