@@ -19,26 +19,27 @@ public class ShapeTester {
 			System.out.println();
 		}
 
+		System.out.println("POLIMORFYZM ");
 		Shape theAcctuallyACircle = new Circle("Navy", 12, 234, 4);
 		printArea(theAcctuallyACircle);
 		System.out.println();
-		
-		if(theAcctuallyACircle instanceof Circle) {
+
+		if (theAcctuallyACircle instanceof Circle) {
 			System.out.println("acctuallACircle objec is a Circle.");
-			Circle theActuallyACircle=(Circle)theAcctuallyACircle;
+			Circle theActuallyACircle = (Circle) theAcctuallyACircle;
 			theActuallyACircle.setRadius(9);
-		}else {
+		} else {
 			System.out.println("theAcctuallyACircle it's not a Cicrvcle object");
 		}
 		Shape acctuallASquare = new Square("Gray", 12, 234, 4);
 		printArea(acctuallASquare);
 		System.out.println();
-		
-		if(acctuallASquare instanceof Circle) {
+
+		if (acctuallASquare instanceof Circle) {
 			System.out.println("acctuallASquare objec is a Circle.");
-			Circle theActuallyASquare=(Circle)theAcctuallyACircle;
+			Circle theActuallyASquare = (Circle) theAcctuallyACircle;
 			theActuallyASquare.setRadius(9);
-		}else {
+		} else {
 			System.out.println("theAcctuallySquare it's not a Cicrcle object");
 		}
 
