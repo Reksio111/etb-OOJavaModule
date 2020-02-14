@@ -13,13 +13,10 @@ public class AbctractTester {
 			if (target instanceof Car) {
 				((Car) target).engineStart();
 			}
-
 			target.move();
 			target.stop();
 			System.out.println();
-
 		}
-
 	}
 
 }

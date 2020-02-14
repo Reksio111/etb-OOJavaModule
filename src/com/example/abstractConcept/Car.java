@@ -6,6 +6,10 @@ public class Car extends Vehicle {
 		super(color, wheels);
 	}
 
+	public void engineStart() {
+		System.out.println("Car engine is started");
+	}
+
 	@Override
 	public void move() {
 		System.out.println("Car is moving");
@@ -21,7 +25,4 @@ public class Car extends Vehicle {
 		return "Type: Car.\n" + super.toString();
 	}
 
-	public void engineStart() {
-		System.out.println("Car engine is started");
-	}
 }
