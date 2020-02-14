@@ -17,6 +17,22 @@ public abstract class Vehicle {
 		return message;
 	}
 
+	public int getNumberOfWheels() {
+		return numberOfWheels;
+	}
+
+	public void setNumberOfWheels(int numberOfWheels) {
+		this.numberOfWheels = numberOfWheels;
+	}
+
+	public String getColour() {
+		return colour;
+	}
+
+	public void setColour(String colour) {
+		this.colour = colour;
+	}
+
 	public abstract void move();
 
 	public abstract void stop();
