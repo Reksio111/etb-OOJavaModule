@@ -3,6 +3,7 @@ package com.example.abstractConcept;
 public class AbctractTester {
 
 	public static void main(String[] args) {
+		
 		Car car = new Car("White", 4);
 		Bicycle bicycle = new Bicycle("Yellow", 2);
 		Trike trike = new Trike("Red", 3);
@@ -17,6 +18,8 @@ public class AbctractTester {
 			target.stop();
 			System.out.println();
 		}
+		
 	}
+
 
 }
