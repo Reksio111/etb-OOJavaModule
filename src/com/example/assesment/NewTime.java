@@ -1,6 +1,6 @@
 package com.example.assesment;
 
-import java.sql.Time;
+
 import java.time.LocalDate;
 import java.util.Date;
 
@@ -15,7 +15,7 @@ public class NewTime {
 
 	}
 
-	// constuctor
+	//Parameterised constructor
 	public NewTime(int h, int min) {
 		this.hour = h;
 		this.mins = min;
@@ -38,7 +38,7 @@ public class NewTime {
 		this.mins = mins;
 	}
 
-	// check if minures are in range between 0 and 59
+	// check if minutes are in range between 0 and 59
 	// and hours are in range between 0 and 12
 	public boolean valid24Time(int h, int m) {
 		boolean validate = false;
