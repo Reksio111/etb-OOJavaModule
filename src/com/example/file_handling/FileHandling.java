@@ -10,12 +10,29 @@ public class FileHandling {
 
 	public static void main(String[] args) throws IOException {
 
-		File file = new File("plain.txt");
+////exercise 1
+//		File file = new File("plain.txt");
+//		FileWriter writer = new FileWriter(file);
+//		writer.write("Weather info:");
+//		writer.write("\nTemperature: 8 degree");
+//		writer.write("\nReal feely: 3 degree");
+//		writer.write("\nWind speed: 17 km/h");
+//		writer.close();
+//
+//		FileReader fr = new FileReader(file);
+//		BufferedReader br = new BufferedReader(fr);
+//		String line;
+//
+//		while ((line = br.readLine()) != null) {
+//			System.out.println(line);
+//		}
+//		br.close();
+
+		// exercise 2
+		String message = "Employee info:\nEmployee Id: 7592747\nFirst name: Sonic\nMiddle initial: T\nLast name: Hedgehod\nOccupation: Animal freedom fighter";
+		File file = new File("phone.txt");
 		FileWriter writer = new FileWriter(file);
-		writer.write("Weather info:");
-		writer.write("\nTemperature: 8 degree");
-		writer.write("\nReal feely: 3 degree");
-		writer.write("\nWind speed: 17 km/h");
+		writer.write(message);
 		writer.close();
 
 		FileReader fr = new FileReader(file);
