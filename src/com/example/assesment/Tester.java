@@ -8,20 +8,20 @@ public class Tester {
 	public static void main(String[] args) throws IOException {
 
 		Scanner keyIn = new Scanner(System.in);
-		
+
 		System.out.println("Test for time format");
 		System.out.print("Enter hour:");
 		int hour = keyIn.nextInt();
 		System.out.print("Enter minute:");
 		int min = keyIn.nextInt();
-		
+
 		NewTime time = new NewTime();
 		if (time.valid24Time(hour, min)) {
 			time.setHour(hour);
 			time.setMins(min);
 			System.out.println("Time in correct format");
 		} else {
-			System.out.println("hours must be between 0 and 23 and minutes ,mmust be between 0 and 59");
+			System.out.println("Hours must be between 0 and 23 and minutes mmust be between 0 and 59");
 		}
 
 		System.out.println("Test for file copying");

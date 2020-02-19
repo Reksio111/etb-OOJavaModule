@@ -28,7 +28,7 @@ public class NewTime {
 	}
 	public boolean valid24Time(int h, int m) {
 		boolean validate = false;
-		if (h >= 0 && h < 24 && m >= 0 && m <= 69) {
+		if (h >= 0 && h < 24 && m >= 0 && m <= 59) {
 			validate = true;
 		}
 		return validate;
@@ -65,9 +65,6 @@ public class NewTime {
 		
 
 		 }
-
-		// time=hh1-hh2;
-		
 	}
 			return hourdif;
 }

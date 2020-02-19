@@ -16,7 +16,6 @@ public class NewCopyFile {
 	
 	public void copyFile(String in, String out) throws IOException {
 		
-		
 		File file = new File(in);
 		FileWriter writer = new FileWriter(file);
 		BufferedWriter bwriter=new BufferedWriter(writer);
