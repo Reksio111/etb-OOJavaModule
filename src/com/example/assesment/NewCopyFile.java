@@ -9,8 +9,7 @@ import java.io.IOException;
 
 public class NewCopyFile {
 
-	public NewCopyFile() {
-	}
+
 
 	public void copyFile(String in, String out) throws IOException {
 
