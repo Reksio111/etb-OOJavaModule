@@ -13,16 +13,17 @@ public class NewTest {
 			// create new instance of Scanner class
 			Scanner keyIn = new Scanner(System.in);
 
-			// Test NewCopyFile class
-			System.out.println("Test for NewCopyfile class");
-			System.out.print("Enter the file content be copied from:");
-			String output = keyIn.nextLine();
-			System.out.print("Enter the file name to write content to:");
-			String input = keyIn.nextLine();
-			//create the class object and all method to copy file content content to another file
-			NewCopyFile file = new NewCopyFile();
-
-			file.copyFile(input + ".txt", output + ".txt");
+//			// Test NewCopyFile class
+//			System.out.println("Test for NewCopyfile class");
+//			System.out.print("Enter the file content be copied from:");
+//			String output = keyIn.nextLine();
+//			System.out.print("Enter the file name to write content to:");
+//			String input = keyIn.nextLine();
+//			// create the class object and all method to copy file content content to
+//			// another file
+//			NewCopyFile file = new NewCopyFile();
+//
+//			file.copyFile(input + ".txt", output + ".txt");
 
 			// test NewTime class methods
 			System.out.println("Test for NewTime class methods ");
@@ -67,6 +68,8 @@ public class NewTest {
 				System.out.println("Time substract: " + timesubstr);
 
 			}
+			//close Scanner object
+			keyIn.close();
 			// in case of input mismatch exception this message is displayed.
 		} catch (InputMismatchException ex) {
 			System.out.print("Please enter proper value");
