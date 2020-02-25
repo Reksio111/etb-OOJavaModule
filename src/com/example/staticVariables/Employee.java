@@ -3,22 +3,22 @@ package com.example.staticVariables;
 public class Employee {
 
 	private String fName, lName;
-	private static int emplId = 100;
-	private int number;
+	private static int num = 1;
+	private int emplId;
 
 	public Employee(String fName, String lName) {
 		this.fName = fName;
 		this.lName = lName;
-		number = emplId++;
+		emplId = num++;
 	}
 
 	public static int getEmplId() {
-		return emplId;
+		return num;
 	}
 
 	@Override
 	public String toString() {
-		return "Employee [First ame=" + fName + ", Last name=" + lName + ", Employee number: " + number + "]";
+		return "Employee Name=" + fName + ", " + lName + ", Employee number: " + emplId;
 	}
 
 	public String getfName() {
