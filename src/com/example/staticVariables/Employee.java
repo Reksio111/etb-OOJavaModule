@@ -37,4 +37,9 @@ public class Employee {
 		this.lName = lName;
 	}
 
+	public boolean equals(Employee obj) {
+		return (this.fName==obj.fName && this.lName==obj.lName && this.emplId==obj.emplId);
+	}
+	
+
 }
